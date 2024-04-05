@@ -1,7 +1,8 @@
 import logos from "../images/logo.png";
 import "./css/home.css";
 import "../fontAwesome/css/all.min.css";
-import about from "../images/about.png";
+import about  from "../images/about.png";
+
 
 function Home() {
   return (
@@ -42,6 +43,7 @@ function Home() {
           </nav>
         </div>
       </header>
+
       <div className="landing">
         <div className="content">
           <div className="text"></div>
@@ -55,9 +57,14 @@ function Home() {
         </div>
         <img src={about} alt="about" />
       </div>
-    
 
-    </div>
+
+
+      
+
+     </div>
+
+    
   );
 }
 
