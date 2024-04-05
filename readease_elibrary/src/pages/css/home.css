@@ -1,27 +1,5 @@
-
-  
-  body{
-    font-family: "Open Sans", sans-serif;
+body{
     background-color: var(--body-color) !important;
-  }
-  
-  /* Small */
-  @media (min-width: 768px) {
-    .container {
-      width: 750px;
-    }
-  }
-  /* Medium */
-  @media (min-width: 992px) {
-    .container {
-      width: 970px;
-    }
-  }
-  /* Large */
-  @media (min-width: 1200px) {
-    .container {
-      width: 1170px;
-    }
   }
   
    header .container {
@@ -67,8 +45,7 @@
     cursor: pointer;
   
   }
-  
-  
+
   .landing {
     display: flex;
     justify-content: space-between;
@@ -95,7 +72,4 @@
    line-height: 1.6;
    width: 500px;
    color: var(--text-color);
-  
     }
-
-    

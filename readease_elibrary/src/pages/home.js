@@ -3,6 +3,7 @@ import "./css/home.css";
 import '../index.css';
 import "../fontAwesome/css/all.min.css";
 import about  from "../images/about.png";
+import About from "../components/homeComponents/about/about"
 
 
 
@@ -59,14 +60,8 @@ function Home() {
         </div>
         <img src={about} alt="about" />
       </div>
-
-
-
-      
-
+      <About />
      </div>
-
-    
   );
 }
 
