@@ -1,7 +1,9 @@
 import logos from "../images/logo.png";
 import "./css/home.css";
+import '../index.css';
 import "../fontAwesome/css/all.min.css";
 import about  from "../images/about.png";
+
 
 
 function Home() {
