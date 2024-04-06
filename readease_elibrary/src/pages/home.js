@@ -4,6 +4,8 @@ import '../index.css';
 import "../fontAwesome/css/all.min.css";
 import about  from "../images/about.png";
 import About from "../components/homeComponents/about/about"
+import Blogs from "../components/homeComponents/blogs/blogs"
+import Featured from "../components/homeComponents/featured/featured"
 
 
 
@@ -16,7 +18,6 @@ function Home() {
             <img src={logos} alt="Logo" />
           </a>
           <nav>
-       
             <ul>
               <li>
                 <a class="active" href="#">
@@ -61,6 +62,8 @@ function Home() {
         <img src={about} alt="about" />
       </div>
       <About />
+      <Featured />
+      <Blogs />
      </div>
   );
 }

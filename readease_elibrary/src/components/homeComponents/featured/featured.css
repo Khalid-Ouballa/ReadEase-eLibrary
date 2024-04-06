@@ -1,0 +1,14 @@
+button {
+  display: inline-block;
+  background-color: var(--first-color);
+  color: var(--white-color);
+  font-weight: 600;
+  padding: 1rem 1.5rem;
+  transition: box-shadow .4s;
+}
+
+.featured__card {
+  position: relative;
+  text-align: center;
+  background-color: #f0f2ff;
+}
