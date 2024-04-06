@@ -1,4 +1,4 @@
-import "../../../index.css";
+import "../../../index2.css";
 import "./featured.css";
 import bookimg from "../../../images/IMG-20240325-WA0047.jpg";
 
