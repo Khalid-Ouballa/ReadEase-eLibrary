@@ -11,42 +11,47 @@ function Featured() {
           <div class="featured__swiper">
             <div>
               <article class="featured__card">
-                <img src={bookimg} alt="image" class="featured__img" />
+                <img src={bookimg} alt="photo1" class="featured__img" />
                 <h2 class="featured__title">Featured Book</h2>
                 <button>Add to Cart</button>
               </article>
               <article class="featured__card">
-                <img src={bookimg} alt="image" class="featured__img" />
+                <img src={bookimg} alt="photo2" class="featured__img" />
                 <h2 class="featured__title">Featured Book</h2>
                 <button>Add to Cart</button>
               </article>
               <article class="featured__card">
-                <img src={bookimg} alt="image" class="featured__img" />
+                <img src={bookimg} alt="photo3" class="featured__img" />
                 <h2 class="featured__title">Featured Book</h2>
                 <button>Add to Cart</button>
               </article>
               <article class="featured__card">
-                <img src={bookimg} alt="image" class="featured__img" />
+                <img src={bookimg} alt="photo4" class="featured__img" />
                 <h2 class="featured__title">Featured Book</h2>
                 <button>Add to Cart</button>
               </article>
               <article class="featured__card">
-                <img src={bookimg} alt="image" class="featured__img" />
+                <img src={bookimg} alt="photo5" class="featured__img" />
                 <h2 class="featured__title">Featured Book</h2>
                 <button>Add to Cart</button>
               </article>
               <article class="featured__card">
-                <img src={bookimg} alt="image" class="featured__img" />
+                <img src={bookimg} alt="photo6" class="featured__img" />
                 <h2 class="featured__title">Featured Book</h2>
                 <button>Add to Cart</button>
               </article>
               <article class="featured__card">
-                <img src={bookimg} alt="image" class="featured__img" />
+                <img src={bookimg} alt="photo7" class="featured__img" />
                 <h2 class="featured__title">Featured Book</h2>
                 <button>Add to Cart</button>
               </article>
               <article class="featured__card">
-                <img src={bookimg} alt="image" class="featured__img" />
+                <img src={bookimg} alt="photo8" class="featured__img" />
+                <h2 class="featured__title">Featured Book</h2>
+                <button>Add to Cart</button>
+              </article>
+              <article class="featured__card">
+                <img src={bookimg} alt="photo9" class="featured__img" />
                 <h2 class="featured__title">Featured Book</h2>
                 <button>Add to Cart</button>
               </article>
