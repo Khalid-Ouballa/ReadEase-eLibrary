@@ -1,13 +1,12 @@
 import logos from "../images/logo.png";
 import "./css/home.css";
-import '../index.css';
+import "../index.css";
 import "../fontAwesome/css/all.min.css";
-import about  from "../images/about.png";
-import About from "../components/homeComponents/about/about"
-import Blogs from "../components/homeComponents/blogs/blogs"
-import Featured from "../components/homeComponents/featured/featured"
-
-
+import about from "../images/about.png";
+import About from "../components/homeComponents/about/about";
+import Blogs from "../components/homeComponents/blogs/blogs";
+import Featured from "../components/homeComponents/featured/featured";
+import Opinions from "../components/homeComponents/opinions/opinions";
 
 function Home() {
   return (
@@ -41,9 +40,11 @@ function Home() {
               </li>
             </ul>
             <div className="form">
-            <i className="fa-solid fa-user login-button" id="login-button" ></i>
-          </div>
-
+              <i
+                className="fa-solid fa-user login-button"
+                id="login-button"
+              ></i>
+            </div>
           </nav>
         </div>
       </header>
@@ -63,8 +64,9 @@ function Home() {
       </div>
       <About />
       <Featured />
+      <Opinions />
       <Blogs />
-     </div>
+    </div>
   );
 }
 
