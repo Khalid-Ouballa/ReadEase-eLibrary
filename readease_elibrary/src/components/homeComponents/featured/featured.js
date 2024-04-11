@@ -26,21 +26,32 @@ function Featured() {
               <Swiper
                 modules={[Navigation, Pagination, A11y]}
                 loop={true}
-                spaceBetween={20}
+                spaceBetween={25}
                 slidesPerView={"auto"}
                 centeredSlides={"auto"}
-                grapCursor={true}
+                grabCursor={true}
                 navigation
                 pagination={{ clickable: true }}
+                breakpoints={{
+                  700: {
+                    slidesPerView: 2,
+                  },
+                  1024: {
+                    slidesPerView: 3,
+                  },
+                  1280: {
+                    slidesPerView: 4,
+                  },
+                }}
                 onSwiper={(swiper) => console.log(swiper)}
                 onSlideChange={() => console.log("slide change")}
               >
                 <SwiperSlide>
                   <article class="featured__card">
                     <img src={bookimg1} alt="photo1" class="featured__img" />
-                    <h2 class="featured__title">Radical Gardening</h2>
+                    <h2 class="featured__title">Holly</h2>
                     <div class="book__author">
-                      <span class="author">George McKay</span>
+                      <span class="author">Stephen King</span>
                     </div>
                     <button>Add to List</button>
                   </article>
@@ -98,9 +109,9 @@ function Featured() {
                 <SwiperSlide>
                   <article class="featured__card">
                     <img src={bookimg7} alt="photo7" class="featured__img" />
-                    <h2 class="featured__title">The Ruins of Gorlan</h2>
+                    <h2 class="featured__title">Sugar Run</h2>
                     <div class="book__author">
-                      <span class="author">John Flanagan</span>
+                      <span class="author">Mesha Maren</span>
                     </div>
                     <button>Add to List</button>
                   </article>
@@ -108,9 +119,9 @@ function Featured() {
                 <SwiperSlide>
                   <article class="featured__card">
                     <img src={bookimg8} alt="photo8" class="featured__img" />
-                    <h2 class="featured__title">The Wright Brothers</h2>
+                    <h2 class="featured__title">The Sin Eater</h2>
                     <div class="book__author">
-                      <span class="author">David McCullough</span>
+                      <span class="author">Megan Campisi</span>
                     </div>
                     <button>Add to List</button>
                   </article>
