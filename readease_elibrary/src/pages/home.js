@@ -11,12 +11,21 @@ import Opinions from "../components/homeComponents/opinions/opinions";
 function Home() {
   return (
     <div>
-      <header>
-        <div class="container">
+     <header>
+        <div class="container-fluid p-0  con">
+
+
+         
+
           <a href="#" class="logo">
             <img src={logos} alt="Logo" />
           </a>
           <nav>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <i class="fas fa-align-right text-dark"></i>
+         </button>
+       
             <ul>
               <li>
                 <a class="active" href="#">
@@ -38,30 +47,36 @@ function Home() {
               <li>
                 <a href="#">Contact</a>
               </li>
+              <li class="log">
+              <a href="#">Log In</a>
+              </li>
             </ul>
             <div className="form">
-              <i
-                className="fa-solid fa-user login-button"
-                id="login-button"
-              ></i>
-            </div>
-          </nav>
-        </div>
-      </header>
+            <i className="fa-solid fa-user login-button" id="login-button" ></i>
+          </div>
 
-      <div className="landing">
-        <div className="content">
-          <div className="text"></div>
-          <h1>Hello world</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis
-            ducimus porro modi atque iste sapiente? Voluptatum nobis, deserunt
-            quo s laboriosam quas eum impedit minus modi labore officia fuga
-            quibusdam nisi!
-          </p>
-        </div>
-        <img src={about} alt="about" />
+          </nav>
       </div>
+       
+
+       <div class="container text-center">
+      <div class="row">
+        <div class="col-md-7 col-sm-12  text-dark">
+        <h1>Browse &</h1>
+          <h1>Select E-Books</h1>
+          <p>
+          Discover the best e-books from your favorite writers and explore hundreds of books across various categories. Find captivating stories, insightful knowledge, and thrilling adventures at your fingertips
+          </p>
+          <button class="btn btn-light px-5 py-2 btn-outline-primary ">
+           Signup to read 
+          </button>
+        </div>
+        <div class="col-md-5 col-sm-12  h-25 ">
+          <img src={about} alt="Book" />
+        </div>
+      </div>
+    </div>
+  </header> 
       <About />
       <Featured />
       <Opinions />

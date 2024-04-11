@@ -1,0 +1,136 @@
+
+.section-4{
+    overflow: hidden;
+  }
+ 
+  .section-4 .container h1 {
+    font-size: 6vmin;
+    padding-top: 14vmin;
+    color: var( --title-color);
+    font-weight:  var(--font-medium);
+  }
+  .section-4  h3{
+    color: var( --title-color);
+  }
+  .section-4  p {
+    font-size: var(  --small-font-size);
+    color: var( --text-color);
+  }
+  
+  
+  .section-4 .team {
+    padding: 10vmin 4vmin;
+  }
+  
+  .section-4 .card {
+    width: 22em;
+    margin-top: 10vmin;
+  }
+  .section-4 .card .a{
+    height: 900px;
+  }
+  
+  .section-4 .card .card-text {
+    padding: 0.5em;
+  }
+  
+  .section-4 .card-body > a {
+    font-size: 1.5em;
+  }
+  
+  .section-4 .carousel-item {
+    padding-left: 3rem;
+  }
+  
+  .border-radius {
+    border-radius: 340px;
+    width: 60%;
+  }
+/********** Hight of the cards  **************/
+  .section-4  .fx {
+  height: 500px;
+  }
+  .section-4  .f {
+    height: 550px;
+    }
+
+    .section-4  .stars {
+      color: var(--first-color);
+      }
+
+
+/*---------------------------------Media--------------------------------------/
+
+
+      /*  small laptops  width: 1024px  */
+@media only screen and (width: 1024px) {
+
+  header .row .col-md-5 img {
+    width: 90%;
+    margin-top: 7rem;
+  }
+  .section-4 .team {
+    display: flex;
+    align-content: center;
+    margin-bottom: 40rem;
+    margin-left: 3rem;
+    margin-right: 11rem;
+   
+     }
+     .section-4 .carousel-inner {
+      width: 24rem;
+      margin-left: -6vmin;
+      top: 40rem;
+        }
+}
+
+/* screen size 768px */
+@media only screen and (width: 768px) {
+ .section-4 .team {
+ margin-left: -13vmin;
+  }
+}
+
+ /* screen size max 768px */
+  @media only screen and (max-width: 768px) {
+    
+.section-4 .carousel-item {
+          padding-left: 0.6rem;
+        }
+        .section-4 .team {
+       display: flex;
+       flex-direction: column;
+       align-content: center;
+     
+        }
+        .section-4 .carousel-inner {
+         width: 24rem;
+         margin-left: -3vmin;
+           }
+       
+ }
+      
+       /* screen size 425px */
+
+@media only screen and (width: 425px) {
+ 
+  .section-4 .carousel-inner {
+    margin-left: -1vmin;
+  }
+}
+  /* screen size 375px */
+
+@media only screen and (max-width: 375px) {
+  .section-4 .card {
+    width: 18em;
+  }
+  .section-4 .carousel-inner {
+    margin-left: -6vmin;
+  }
+}
+  /* small phones size 320px */
+@media only screen and (max-width: 320px) {
+  .section-4 .carousel-inner {
+    margin-left: -15vmin;
+  }
+}

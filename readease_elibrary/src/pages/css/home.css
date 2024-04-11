@@ -1,8 +1,29 @@
-body{
-    background-color: var(--body-color) !important;
-  }
+
   
-   header .container {
+ 
+  
+  /* Small */
+  @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  /* Medium */
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  /* Large */
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  }
+  header {
+    margin-top: 1.5rem;
+  }
+   header .con {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -11,6 +32,7 @@ body{
   
    header .logo img{
     height:55px;
+    margin-left: 6rem;
    }
   header nav {
     flex: 1;
@@ -21,6 +43,7 @@ body{
   }
    header nav ul{
   display: flex;
+  margin-right: 5rem;
   
    }
    header nav ul li a {
@@ -30,6 +53,7 @@ body{
     font-size: 15px;
     transition: 0.3s;
     color: var(--title-color);
+    
    }
   
    header nav .form{
@@ -37,7 +61,7 @@ body{
   width: 40px;
   height: 30px;
   position: relative;
-  margin-left: 45px;
+  margin-right: 3rem;
   top: -5px;
   
    }
@@ -45,31 +69,151 @@ body{
     cursor: pointer;
   
   }
-
-  .landing {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 60px;
-   }
-   .landing img{
-    height: 400px;
-    padding-right: 20px;
-   }
-   .landing .content{
-    padding-left: 50px;
-   }
-   .landing .content h1{
-   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   color: var(--title-color);
-   }
-   .landing .content p{
-   line-height: 1.6;
-   width: 500px;
-   color: var(--text-color);
+  
+  header .container{
+    margin-top: -3rem;
+  }
+    header .row .col-md-7 {
+      padding: 22vmin 1vmin;
+      padding-bottom: 35vmin;
     }
+    
+    header .row .col-md-5 {
+      padding: 4.2vmin 1vmin;
+    }
+    
+    header .row .col-md-5 img {
+      width: 90%;
+      margin-top: 3rem;
+    }
+    
+    header .container .col-md-7 {
+      font-family: "Rubik", sans-serif;
+    }
+    
+    header .container .col-md-7 h6 {
+      padding: 1vmin;
+      letter-spacing: 4px;
+    }
+    
+    header .container .col-md-7 h1 {
+      font-size: 8.5vmin;
+     
+      padding: 0.1em 0em;
+      line-height: 1;
+    }
+    header .container .col-md-7 p {
+      padding: 1vmin 5vmin;
+      font-size: var(  --small-font-size);
+      color: var( --text-color);
+    }
+    
+    .btn-outline-primary {
+      border-radius: 30px;
+      margin-top: 1rem;
+    }
+    
+    header nav .toggle-menu {
+      
+      font-size:20 px;
+    }
+    @media only screen and (max-width: 768px) {
+      header .logo {
+        padding-right: 7.5rem;
+        margin-left: -50px;
+        width: auto;
+        height: auto;
+        
+      }
+      header nav .navbar-toggler {
+       padding-right: 50px;
+       font-size: 18px;
+
+      }
+      header nav ul {
+        display: none;
+      }
+      header nav .form {
+        display: none;
+      }
+      header nav ul li a {
+    
+        color:white;
+        font-weight: bolder;
+        
+       }
+      header nav .navbar-toggler:hover + ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+      
+      }
+      header nav ul li.log {
+        display: block;
+      }
+     
+    }
+   
+/*  hide the toggle menu on larger screens */
+@media (min-width: 769px) {
+  header nav .navbar-toggler {
+    display: none;
+  }
+  header nav ul li.log {
+    display: none;
+  }
+}
+
+
+/*  small laptops  */
+@media only screen and (max-width: 1024px) {
+
+  header .row .col-md-5 img {
+    width: 90%;
+    margin-top: 7rem;
+  }
+}
+
+/* screen size 768px */
+@media only screen and (width: 768px) {
+  header .row .col-md-5 img {
+    width: 100%;
+     margin-top: 12rem;
+  }
+ 
+  
+ }
+ /*  mobile Medieum max-width: 375px*/
+@media only screen and (max-width: 425px) {
+  header .row .col-md-5 img {
+    width: 90%;
+    margin-top: -4rem;
+  }
+ 
+}
+ 
+/*  mobile Medieum max-width: 375px*/
+@media only screen and (max-width: 375px) {
+
+   header .logo {
+  height: auto;
+  width: 10px;   
+  }
+}
+/*  mobile small max-width: 320px */
+
+@media only screen and (max-width: 320px) {
+
+  header .logo {
+    padding-right: 20px;
+
+ }
+ header nav .navbar-toggler {
+padding-right: 20px;
+}
+}
