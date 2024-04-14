@@ -7,6 +7,7 @@ import About from "../components/homeComponents/about/about";
 import Blogs from "../components/homeComponents/blogs/blogs";
 import Featured from "../components/homeComponents/featured/featured";
 import Opinions from "../components/homeComponents/opinions/opinions";
+import Footer from "../components/globalComponents/footer/footer";
 
 function Home() {
   return (
@@ -81,6 +82,7 @@ function Home() {
       <Featured />
       <Opinions />
       <Blogs />
+      <Footer />
     </div>
   );
 }
