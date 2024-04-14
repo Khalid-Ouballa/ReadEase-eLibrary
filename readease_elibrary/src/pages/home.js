@@ -11,24 +11,25 @@ import Opinions from "../components/homeComponents/opinions/opinions";
 function Home() {
   return (
     <div>
-     <header>
-        <div class="container-fluid p-0  con">
+  <section className="section-1">
+
+        <div className=" container-fluid p-0  con">
 
 
          
 
-          <a href="#" class="logo">
+          <a href="#" className="logo">
             <img src={logos} alt="Logo" />
           </a>
           <nav>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
           aria-label="Toggle navigation">
-          <i class="fas fa-align-right text-dark"></i>
+          <i className="fas fa-align-right text-dark"></i>
          </button>
        
             <ul>
               <li>
-                <a class="active" href="#">
+                <a className="active" href="#">
                   Home
                 </a>
               </li>
@@ -47,7 +48,7 @@ function Home() {
               <li>
                 <a href="#">Contact</a>
               </li>
-              <li class="log">
+              <li className="log">
               <a href="#">Log In</a>
               </li>
             </ul>
@@ -59,25 +60,31 @@ function Home() {
       </div>
        
 
-       <div class="container text-center">
-      <div class="row">
-        <div class="col-md-7 col-sm-12  text-dark">
-        <h1>Browse &</h1>
-          <h1>Select E-Books</h1>
-          <p>
-          Discover the best e-books from your favorite writers and explore hundreds of books across various categories. Find captivating stories, insightful knowledge, and thrilling adventures at your fingertips
-          </p>
-          <button class="btn btn-light px-5 py-2 btn-outline-primary ">
-           Signup to read 
-          </button>
-        </div>
-        <div class="col-md-5 col-sm-12  h-25 ">
-          <img src={about} alt="Book" />
-        </div>
+      <div className="container text-center">
+
+         <div className="row">
+            <div className="col-md-7 col-sm-12  text-dark">
+              <h1>Browse &</h1>
+              <h1>Select E-Books</h1>
+              <p>
+                 Discover the best e-books from your favorite writers and explore hundreds of books across various categories. Find captivating stories, insightful knowledge, and thrilling adventures at your fingertips
+               </p>
+                <button className="btn btn-light px-5 py-2 btn-outline-primary ">
+                   Signup to read </button>
+           </div> 
+
+              <div className="col-md-5 col-sm-12  h-25 ">
+               <img src={about} alt="Book" />
+                </div>
+
+
+           </div>
+
       </div>
-    </div>
-  </header> 
-      <About />
+
+   
+    </section>
+    <About />
       <Featured />
       <Opinions />
       <Blogs />
