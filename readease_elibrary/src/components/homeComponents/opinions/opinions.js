@@ -21,7 +21,7 @@ function Opinions() {
     <div className="col-md-4 col-12 text-center">
         <div className="card mr-2 d-inline-block shadow-lg f"  >
             <div className="card-img-top">
-              <img src={face3} className="img-fluid border-radius p-4" alt=""/>
+              <img src={face3} className="img-fluid border-radius p-4 mx-auto" alt=""/>
             </div>
             <div className="card-body "   >
               <h3 className="card-title">Blalock Jolene</h3>
@@ -48,7 +48,7 @@ function Opinions() {
               <div className="carousel-item active">
                 <div className="card mr-2 d-inline-block shadow fx">
                   <div className="card-img-top">
-                    <img src={face1} className="img-fluid rounded-circle w-50 p-4" alt="" />
+                    <img src={face1} className="img-fluid rounded-circle w-50 p-4 mx-auto" alt="" />
                   </div>
                   <div className="card-body">
                     <h3 className="card-title">Allen Agnes</h3>
@@ -70,7 +70,7 @@ function Opinions() {
               <div className="carousel-item">
                 <div className="card  d-inline-block mr-2 shadow fx"  >
                   <div className="card-img-top">
-                    <img src={face2} className="img-fluid rounded-circle w-50 p-4" alt="" />
+                    <img src={face2} className="img-fluid rounded-circle w-50 p-4 mx-auto" alt="" />
                   </div>
                   <div className="card-body">
                     <h3 className="card-title">Amiel Barbara</h3>
@@ -94,7 +94,7 @@ function Opinions() {
     <div className="col-md-4 col-12 text-center">
         <div className="card mr-2 d-inline-block shadow-lg f">
             <div className="card-img-top">
-              <img src={face4} className="img-fluid border-radius p-4" alt="" />
+              <img src={face4} className="img-fluid border-radius p-4 mx-auto" alt="" />
             </div>
             <div className="card-body">
               <h3 className="card-title">Olivia Louis</h3>
