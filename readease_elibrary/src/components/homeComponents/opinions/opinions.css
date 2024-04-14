@@ -20,6 +20,7 @@
   
   .section-4 .team {
     padding: 10vmin 4vmin;
+    margin-top: -4rem;
   }
   
   .section-4 .card {
@@ -45,7 +46,12 @@
   .border-radius {
     border-radius: 340px;
     width: 60%;
+   
   }
+  .section-4  .stars {
+    color: var(--first-color);
+    }
+
 /********** Hight of the cards  **************/
   .section-4  .fx {
   height: 500px;
@@ -54,10 +60,7 @@
     height: 550px;
     }
 
-    .section-4  .stars {
-      color: var(--first-color);
-      }
-
+   
 
 /*---------------------------------Media--------------------------------------/
 
@@ -107,6 +110,10 @@
          width: 24rem;
          margin-left: -3vmin;
            }
+           .section-4 .team {
+          
+            margin-top: -22rem;
+          }
        
  }
       

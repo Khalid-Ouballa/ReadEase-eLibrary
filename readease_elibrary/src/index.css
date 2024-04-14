@@ -73,3 +73,8 @@ h1, h2, h3, h4 {
   font-family: var(--second-font);
   font-weight: var(--font-medium);
 }
+img {
+  display: block;
+ 
+  
+}
