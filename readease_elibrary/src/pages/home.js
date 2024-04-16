@@ -1,14 +1,49 @@
+import React, { useEffect } from 'react';
+import { Link, Element, scroller } from 'react-scroll';
+import $ from "jquery"
 import logos from "../images/logo.png";
 import "./css/home.css";
 import "../index.css";
 import "../fontAwesome/css/all.min.css";
-import about from "../images/about.png";
+import about from "../images/home2.png";
 import About from "../components/homeComponents/about/about";
 import Blogs from "../components/homeComponents/blogs/blogs";
 import Featured from "../components/homeComponents/featured/featured";
 import Opinions from "../components/homeComponents/opinions/opinions";
 
 function Home() {
+
+  useEffect(() => {
+    const handleScroll = () => {
+      let navbar = $(".nv");
+      let aboutSection = $(".about-section");
+      let oTop = aboutSection.offset().top - window.innerHeight +400;
+  
+      
+      console.log("Scroll Top:", $(window).scrollTop());
+      console.log("oTop:", oTop);
+  
+      if ($(window).scrollTop() > oTop) {
+        navbar.addClass("sticky");
+      } else {
+        navbar.removeClass("sticky");
+      }
+    };
+    $(window).on("scroll", handleScroll);
+    return () => {
+      $(window).off("scroll", handleScroll);
+    };
+  }, []); 
+  
+  // auto scrool
+  const scrollToSection = (sectionId) => {
+    scroller.scrollTo(sectionId, {
+      duration: 400,
+      delay: 0,
+      smooth: 'easeInOutQuart',
+    });
+  };
+
   return (
     <div>
   <section className="section-1">
@@ -16,12 +51,12 @@ function Home() {
         <div className=" container-fluid p-0  con">
 
 
-         
+        <nav className="nv">
 
-          <a href="#" className="logo">
+          <a href="#" className="logo ">
             <img src={logos} alt="Logo" />
           </a>
-          <nav>
+        
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
           aria-label="Toggle navigation">
           <i className="fas fa-align-right text-dark"></i>
@@ -29,21 +64,64 @@ function Home() {
        
             <ul>
               <li>
-                <a className="active" href="#">
-                  Home
-                </a>
+              <Link
+      activeClass="active"
+    to="section-1"
+    spy={true}
+    smooth={true}
+    duration={800}
+    onClick={() => scrollToSection('section-1')}
+  >
+   Home
+  </Link>
               </li>
               <li>
-                <a href="#">About</a>
+  <Link
+    activeClass="active"
+    to="about-section"
+    spy={true}
+    smooth={true}
+    duration={800}
+    onClick={() => scrollToSection('about-section')}
+  >
+   About
+  </Link>
+</li>
+              <li>
+              <Link
+    activeClass="active"
+    to="featured section"
+    spy={true}
+    smooth={true}
+    duration={800}
+    onClick={() => scrollToSection('featured section')}
+  >
+   Books
+  </Link>
               </li>
               <li>
-                <a href="#">Books</a>
+              <Link
+    activeClass="active"
+    to="section-4"
+    spy={true}
+    smooth={true}
+    duration={800}
+    onClick={() => scrollToSection('section-4')}
+  >
+   Opinions
+  </Link>
               </li>
               <li>
-                <a href="#">Opinions</a>
-              </li>
-              <li>
-                <a href="#">Blogs</a>
+              <Link
+    activeClass="active"
+    to="blogs"
+    spy={true}
+    smooth={true}
+    duration={800}
+    onClick={() => scrollToSection('blogs')}
+  >
+  Blogs
+  </Link>
               </li>
               <li>
                 <a href="#">Contact</a>
@@ -75,7 +153,7 @@ function Home() {
 
               <div className="col-md-5 col-sm-12  h-25 ">
                <img src={about} alt="Book" />
-                </div>
+              </div>
 
 
            </div>
@@ -84,6 +162,7 @@ function Home() {
 
    
     </section>
+    
     <About />
       <Featured />
       <Opinions />

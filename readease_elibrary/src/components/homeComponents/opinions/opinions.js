@@ -14,7 +14,7 @@ function Opinions() {
 
   <section className="section-4">
   <div className="container text-center">
-    <h1>What our Reader's Say about us</h1>
+    <h2  className="section__title">What our Reader's Say about us</h2>
     <p className="text-secondary">Stay Focused</p>
   </div>
   <div className="team row  ">
