@@ -81,8 +81,8 @@
 }
 
 .footer__data {
-  grid-template-columns: repeat(2, max-content);
-  gap: 3rem 4rem;
+  grid-template-columns: repeat(auto-fill, minmax(125px, 1fr));
+  gap: 1.5rem 4rem;
 }
 
 .footer__title {
