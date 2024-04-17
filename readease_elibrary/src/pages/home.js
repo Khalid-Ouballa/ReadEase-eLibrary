@@ -124,8 +124,18 @@ function Home() {
   Blogs
   </Link>
               </li>
+
               <li>
-                <a href="#">Contact</a>
+              <Link
+    activeClass="active"
+    to=" theFooter"
+    spy={true}
+    smooth={true}
+    duration={800}
+    onClick={() => scrollToSection('theFooter')}
+  >
+  Contact
+  </Link>
               </li>
               <li className="log">
               <a href="#">Log In</a>
